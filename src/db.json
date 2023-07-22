@@ -1,0 +1,40 @@
+{
+  "commandes": [
+    {
+      "id": 1,
+      "name": "jeux 1",
+      "type": "action",
+      "prix": "100"
+    },
+    {
+      "id": 2,
+      "name": "jeux 2",
+      "type": "adventure",
+      "prix": "130"
+    },
+    {
+      "id": 3,
+      "name": "jeux 3",
+      "type": "arcade",
+      "prix": "180"
+    },
+    {
+      "id": 4,
+      "name": "jeux 4",
+      "type": "sport",
+      "prix": "200"
+    },
+    {
+      "id": 5,
+      "name": "jeux 5",
+      "type": "adventure",
+      "prix": "600"
+    },
+    {
+      "id": 6,
+      "name": "jeux 6",
+      "type": "adventure",
+      "prix": "700"
+    }
+  ]
+}

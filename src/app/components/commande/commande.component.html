@@ -1,0 +1,49 @@
+<h1>commandes</h1>
+<form>
+<div class="form-group">
+    <label for="one">Enter Name</label>
+    <input [(ngModel)]="myCommande.name" type="text" 
+    class="form-control" name="name" id="one" aria-describedby="helpId" placeholder="Enter Name">
+    
+    </div>
+
+
+    <div class="form-group">
+        <label for="two">Enter Type</label>
+        <input [(ngModel)]="myCommande.type" type="text" 
+        class="form-control" name="type" id="two" aria-describedby="helpId" placeholder="Enter Type">
+        
+        </div>
+
+
+        <div class="form-group">
+            <label for="three">Enter Prix</label>
+            <input [(ngModel)]="myCommande.prix" type="text" 
+            class="form-control" name="prix" id="three" aria-describedby="helpId" placeholder="Enter Prix">
+            
+            </div>
+            <button *ngIf="!myCondition" (click)="postCommande()" type="button" class="btn btn-primary btn-block">Add</button>
+            <button *ngIf="myCondition" (click)="updateMyCommande()"type="button" class="btn btn-warning btn-block">Update</button>
+        </form>
+        <table class="table table-success">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>type</th>
+                    <th>prix</th>
+                </tr>
+            </thead>
+<tbody>
+    <tr *ngFor="let myVariable of myArray">
+        <td>{{myVariable.id}}</td>
+        <td>{{myVariable.name}}</td>
+        <td>{{myVariable.type}}</td>
+        <td>{{myVariable.prix}}</td>
+        <td>
+            <button (click)="deleteCommande(myVariable.id)" type="button" class="btn btn-danger">Delete</button>
+            <button (click)="editCommande(myVariable)" type="button" class="btn btn-warning ml-2">Update</button>
+        </td>
+    </tr>
+</tbody>
+        </table>
